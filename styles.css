@@ -1,0 +1,113 @@
+/* Ex1 */
+
+body {
+    margin: 16px;
+}
+
+:root {
+    --title1-font: 3rem;
+    --title2-font: 2.5rem;
+    --title3-font: 2rem;
+    --title4-font: 1.5rem;
+    --title5-font: 1rem;
+    --font-weight1: 600;
+}
+
+.Titles {
+    text-align: center;
+    color: gray;
+    padding: 8px;
+}
+
+.Title1 {
+    font-size: var(--title1-font);
+    font-weight: var(--font-weight1);
+}
+
+.Title2 {
+    font-size: var(--title2-font);
+}
+
+.Title3 {
+    font-size: var(--title3-font);
+    font-weight: var(--font-weight1);
+}
+
+.Title4 {
+    font-size: var(--title4-font);
+}
+
+.Title5 {
+    font-size: var(--title5-font);
+    font-weight: var(--font-weight1);
+}
+
+/* Ex2 */
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 16px;
+}
+
+.sector {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 10px solid transparent;
+    overflow: hidden;
+    border-radius: 50%;
+    mix-blend-mode: overlay;
+    animation: rotate var(--duration) linear infinite;
+}
+
+.sector1 {
+    border-bottom: 10px solid #2e6930;
+    --duration: 1.5s;
+}
+
+.sector2 {
+    border-left: 10px solid #3d8c40;
+    --duration: 1s;
+}
+
+.sector3 {
+    border-top: 10px solid #4caf50;
+    --duration: 2s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Ex3 */
+
+.linear {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #F96167, #F9E795);
+    background-size: 300%;
+    background-position: left;
+    animation: bg-animation 15s alternate infinite;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    50% {
+        background-position: center;
+    }
+    100% {
+        background-position: right;
+    }
+}
