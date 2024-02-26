@@ -13,31 +13,31 @@ body {
     --font-weight1: 600;
 }
 
-.Titles {
+.titles {
     text-align: center;
     color: gray;
     padding: 8px;
 }
 
-.Title1 {
+.title1 {
     font-size: var(--title1-font);
     font-weight: var(--font-weight1);
 }
 
-.Title2 {
+.title2 {
     font-size: var(--title2-font);
 }
 
-.Title3 {
+.title3 {
     font-size: var(--title3-font);
     font-weight: var(--font-weight1);
 }
 
-.Title4 {
+.title4 {
     font-size: var(--title4-font);
 }
 
-.Title5 {
+.title5 {
     font-size: var(--title5-font);
     font-weight: var(--font-weight1);
 }
